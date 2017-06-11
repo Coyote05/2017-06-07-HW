@@ -8,5 +8,7 @@ public class Main {
         RunQueries.firstQuery(6);
 
         WorkWithTables.createATable("REGISTRATION", "first_name", "VARCHAR(255)", "family_name", "VARCHAR(255)", "age", "Integer");
+
+        WorkWithTables.deleteRecordsFromTable("REGISTRATION", "family_name", "Brodén");
     }
 }
