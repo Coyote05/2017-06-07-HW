@@ -33,34 +33,17 @@ public class WorkWithTables {
 
     public static void deleteRecordsFromTable(String nameOfTheTable, String parameterOfRecord, String valueOfRecord) {
 
-        int exist = 0;
-
         Connection connection = DbUtil.getConnection();
 
         try {
             Statement statement = connection.createStatement();
 
-            ResultSet resultSet = statement.executeQuery("SELECT " + parameterOfRecord + " FROM " + nameOfTheTable);
-
-            while (resultSet.next()) {
-
-                if (valueOfRecord.equals(resultSet.getString(parameterOfRecord))) {
-
-                    exist++;
-                }
-            }
-
             String execute = "DELETE FROM " + nameOfTheTable + " " + "WHERE " + parameterOfRecord + " = '" + valueOfRecord + "'";
 
-            if (exist > 0) {
+            statement.executeUpdate(execute);
 
-                statement.executeUpdate(execute);
-                System.out.println("Record executed!");
+            System.out.println("Record executed!");
 
-            }
-            else {
-                System.out.println("The record is not exist!");
-            }
             connection.close();
 
         } catch (SQLException e) {
