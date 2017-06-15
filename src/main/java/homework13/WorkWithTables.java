@@ -34,8 +34,6 @@ public class WorkWithTables {
 
             statement.executeUpdate(execute);
 
-            System.out.println("Record executed!");
-
             connection.close();
 
         } catch (SQLException e) {
