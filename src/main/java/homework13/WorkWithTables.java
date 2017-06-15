@@ -6,14 +6,16 @@ import java.sql.Statement;
 
 public class WorkWithTables {
 
-    public static void createTable(String newTable) {
+    public static void createTable(String tableName, String columns) {
 
         Connection connection = DbUtil.getConnection();
 
         try {
             Statement statement = connection.createStatement();
 
-            statement.executeUpdate(newTable);
+            String createTable = "CREATE TABLE " + tableName + " (" + columns + ")";
+
+            statement.executeUpdate(createTable);
 
             connection.close();
             System.out.println("Table created." + "\n");
