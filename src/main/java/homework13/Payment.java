@@ -2,43 +2,43 @@ package homework13;
 
 public class Payment {
 
-    private Integer payment_id;
-    private Integer customer_id;
-    private Integer staff_id;
-    private Integer rental_id;
+    private Integer paymentId;
+    private Integer customerId;
+    private Integer staffId;
+    private Integer rentalId;
     private Double amount;
-    private String payment_date;
+    private String paymentDate;
 
-    public Integer getPayment_id() {
-        return payment_id;
+    public Integer getPaymentId() {
+        return paymentId;
     }
 
-    public void setPayment_id(Integer payment_id) {
-        this.payment_id = payment_id;
+    public void setPaymentId(Integer paymentId) {
+        this.paymentId = paymentId;
     }
 
-    public Integer getCustomer_id() {
-        return customer_id;
+    public Integer getCustomerId() {
+        return customerId;
     }
 
-    public void setCustomer_id(Integer customer_id) {
-        this.customer_id = customer_id;
+    public void setCustomerId(Integer customerId) {
+        this.customerId = customerId;
     }
 
-    public Integer getStaff_id() {
-        return staff_id;
+    public Integer getStaffId() {
+        return staffId;
     }
 
-    public void setStaff_id(Integer staff_id) {
-        this.staff_id = staff_id;
+    public void setStaffId(Integer staffId) {
+        this.staffId = staffId;
     }
 
-    public Integer getRental_id() {
-        return rental_id;
+    public Integer getRentalId() {
+        return rentalId;
     }
 
-    public void setRental_id(Integer rental_id) {
-        this.rental_id = rental_id;
+    public void setRentalId(Integer rentalId) {
+        this.rentalId = rentalId;
     }
 
     public Double getAmount() {
@@ -49,23 +49,23 @@ public class Payment {
         this.amount = amount;
     }
 
-    public String getPayment_date() {
-        return payment_date;
+    public String getPaymentDate() {
+        return paymentDate;
     }
 
-    public void setPayment_date(String payment_date) {
-        this.payment_date = payment_date;
+    public void setPaymentDate(String paymentDate) {
+        this.paymentDate = paymentDate;
     }
 
     @Override
     public String toString() {
         return "Payment{" +
-                "payment_id=" + payment_id +
-                ", customer_id=" + customer_id +
-                ", staff_id=" + staff_id +
-                ", rental_id=" + rental_id +
+                "paymentId=" + paymentId +
+                ", customerId=" + customerId +
+                ", staffId=" + staffId +
+                ", rentalId=" + rentalId +
                 ", amount=" + amount +
-                ", payment_date='" + payment_date + '\'' +
+                ", paymentDate='" + paymentDate + '\'' +
                 '}';
     }
 }

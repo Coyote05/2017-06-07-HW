@@ -2,26 +2,26 @@ package homework13;
 
 public class Movie {
 
-    private Integer film_id;
+    private Integer filmId;
     private String title;
     private String description;
-    private Integer release_year;
-    private Integer language_id;
-    private Integer rental_duration;
-    private Double rental_rate;
+    private Integer releaseYear;
+    private Integer languageId;
+    private Integer rentalDuration;
+    private Double rentalRate;
     private Integer length;
-    private Double replacement_cost;
+    private Double replacementCost;
     private String rating;
-    private String last_update;
-    private String special_features;
+    private String lastUpdate;
+    private String specialFeatures;
     private String fulltext;
 
-    public Integer getFilm_id() {
-        return film_id;
+    public Integer getFilmId() {
+        return filmId;
     }
 
-    public void setFilm_id(Integer film_id) {
-        this.film_id = film_id;
+    public void setFilmId(Integer filmId) {
+        this.filmId = filmId;
     }
 
     public String getTitle() {
@@ -40,36 +40,36 @@ public class Movie {
         this.description = description;
     }
 
-    public Integer getRelease_year() {
-        return release_year;
+    public Integer getReleaseYear() {
+        return releaseYear;
     }
 
-    public void setRelease_year(Integer release_year) {
-        this.release_year = release_year;
+    public void setReleaseYear(Integer releaseYear) {
+        this.releaseYear = releaseYear;
     }
 
-    public Integer getLanguage_id() {
-        return language_id;
+    public Integer getLanguageId() {
+        return languageId;
     }
 
-    public void setLanguage_id(Integer language_id) {
-        this.language_id = language_id;
+    public void setLanguageId(Integer languageId) {
+        this.languageId = languageId;
     }
 
-    public Integer getRental_duration() {
-        return rental_duration;
+    public Integer getRentalDuration() {
+        return rentalDuration;
     }
 
-    public void setRental_duration(Integer rental_duration) {
-        this.rental_duration = rental_duration;
+    public void setRentalDuration(Integer rentalDuration) {
+        this.rentalDuration = rentalDuration;
     }
 
-    public Double getRental_rate() {
-        return rental_rate;
+    public Double getRentalRate() {
+        return rentalRate;
     }
 
-    public void setRental_rate(Double rental_rate) {
-        this.rental_rate = rental_rate;
+    public void setRentalRate(Double rentalRate) {
+        this.rentalRate = rentalRate;
     }
 
     public Integer getLength() {
@@ -80,12 +80,12 @@ public class Movie {
         this.length = length;
     }
 
-    public Double getReplacement_cost() {
-        return replacement_cost;
+    public Double getReplacementCost() {
+        return replacementCost;
     }
 
-    public void setReplacement_cost(Double replacement_cost) {
-        this.replacement_cost = replacement_cost;
+    public void setReplacementCost(Double replacementCost) {
+        this.replacementCost = replacementCost;
     }
 
     public String getRating() {
@@ -96,20 +96,20 @@ public class Movie {
         this.rating = rating;
     }
 
-    public String getLast_update() {
-        return last_update;
+    public String getLastUpdate() {
+        return lastUpdate;
     }
 
-    public void setLast_update(String last_update) {
-        this.last_update = last_update;
+    public void setLastUpdate(String lastUpdate) {
+        this.lastUpdate = lastUpdate;
     }
 
-    public String getSpecial_features() {
-        return special_features;
+    public String getSpecialFeatures() {
+        return specialFeatures;
     }
 
-    public void setSpecial_features(String special_features) {
-        this.special_features = special_features;
+    public void setSpecialFeatures(String specialFeatures) {
+        this.specialFeatures = specialFeatures;
     }
 
     public String getFulltext() {
@@ -123,18 +123,18 @@ public class Movie {
     @Override
     public String toString() {
         return "Movie{" +
-                "film_id=" + film_id +
+                "filmId=" + filmId +
                 ", title='" + title + '\'' +
                 ", description='" + description + '\'' +
-                ", release_year=" + release_year +
-                ", language_id=" + language_id +
-                ", rental_duration=" + rental_duration +
-                ", rental_rate=" + rental_rate +
+                ", releaseYear=" + releaseYear +
+                ", languageId=" + languageId +
+                ", rentalDuration=" + rentalDuration +
+                ", rentalRate=" + rentalRate +
                 ", length=" + length +
-                ", replacement_cost=" + replacement_cost +
+                ", replacementCost=" + replacementCost +
                 ", rating='" + rating + '\'' +
-                ", last_update='" + last_update + '\'' +
-                ", special_features='" + special_features + '\'' +
+                ", lastUpdate='" + lastUpdate + '\'' +
+                ", specialFeatures='" + specialFeatures + '\'' +
                 ", fulltext='" + fulltext + '\'' +
                 '}';
     }
